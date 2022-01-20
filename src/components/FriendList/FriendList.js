@@ -17,6 +17,6 @@ function FriendList({ friends }) {
   );
 }
 FriendList.propTypes = {
-  children: PropTypes.node,
+  friends: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 export default FriendList;
