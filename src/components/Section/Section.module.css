@@ -1,0 +1,13 @@
+.section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ccc;
+}
+.statistics {
+  composes: section;
+  background-color: #999;
+}
+.profile {
+  composes: section;
+  background-color: #777;
+}

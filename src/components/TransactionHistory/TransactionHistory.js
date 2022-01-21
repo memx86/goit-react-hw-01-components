@@ -5,19 +5,19 @@ function TransactionHistory({ items }) {
   return (
     <table className={s.history}>
       <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+        <tr className={s.head}>
+          <th className={s.cellHead}>Type</th>
+          <th className={s.cellHead}>Amount</th>
+          <th className={s.cellHead}>Currency</th>
         </tr>
       </thead>
 
-      <tbody>
+      <tbody className={s.body}>
         {items.map((item) => (
-          <tr key={item.id}>
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+          <tr key={item.id} className={s.row}>
+            <td className={s.cell}>{item.type}</td>
+            <td className={s.cell}>{item.amount}</td>
+            <td className={s.cell}>{item.currency}</td>
           </tr>
         ))}
       </tbody>

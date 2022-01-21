@@ -1,3 +1,7 @@
 .list {
-  background-color: #bbb;
+  padding: 1rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

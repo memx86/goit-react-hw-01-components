@@ -1,3 +1,21 @@
 .history {
-  background-color: #999;
+  min-width: 500px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.head {
+  color: #fff;
+  background-color: rgba(13, 152, 186, 0.9);
+}
+.row:nth-child(2n) {
+  background-color: #eee;
+}
+.cell {
+  text-transform: capitalize;
+  padding: 1rem;
+}
+.cellHead {
+  composes: cell;
+  text-transform: uppercase;
 }
